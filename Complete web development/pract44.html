@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaaScript String Functions</title>
+</head>
+<body>
+    
+    <script>
+        var str='this is a string';
+        console.log(str);
+
+        // Gives you the first occurence of substring 
+        var position = str.indexOf('st'); 
+        console.log(position);
+
+        // Last occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Subsstring from a string
+        // var substr = str.slice(1,7); (it can take negative values)
+        // var substr = str.substring(1,9);(it cannot take negative values)
+        var substr1 = str.substr(1,6);
+        // (first number shows where to start and second number shows how many you have to take )
+        console.log(substr1);
+        
+        var replaced = str.replace('string', 'avi');
+        console.log(str);
+        console.log(replaced);
+        console.log(str.toUpperCase()); 
+        console.log(str.toLowerCase()); 
+        var newstring = str.concat(' New String');
+        console.log(newstring);
+        var strWithWhitespaces = "    this contain        Whitespaces            ";
+        console.log(strWithWhitespaces)
+        console.log(strWithWhitespaces.trim())
+        var char2 = str.charAt(2);
+        console.log(char2);
+        var char2 = str.charCodeAt(2);   // Not very important
+        console.log(char2);
+        console.log(str[2]);
+
+
+    </script>
+</body>
+</html>

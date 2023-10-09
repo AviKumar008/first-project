@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* element selector */
+        p{
+            border: 4px solid black;
+        }
+        /* id selector */
+        #bluepara{color: blue;}
+        /* class selector */
+        .bgorange{background-color: orange;}
+        .redElement{color: red;}
+        .bgBlue{background: blue;}
+        /* Grouping Selector */
+        footer, span{
+            background-color: aqua;
+        
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="bluepara" class="blueelement bgorange">The quick brown fox jumps over the lazy dog</p>
+    <p id="redPara" class="redElement bgBlue">The quick brown fox jumps over the lazy dog</p>
+    <div>
+        <span>The quick brown fox jumps over the lazy dog</span>
+    </div>
+    <footer>This is footer</footer> 
+</body>
+</html>

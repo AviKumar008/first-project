@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 4px solid rgb(124, 178, 124);
+            width: 905px;
+            margin: auto;
+            background-color: rgb(118, 234, 195);
+
+        }
+        .item{
+            border: 3px solid rgb(203, 121, 190);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(236, 135, 135);
+
+        }
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+#fruits{
+    float: left;
+    width: 48%;
+    
+}
+#vegies{
+    float: right;
+    width: 48%;
+    
+}
+#oils{
+    /* float: left; */
+    clear: both;
+    width: 99.3%;
+    
+}
+h1
+{
+    margin: 20px auto;
+    text-align: center;
+}
+p{
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+    text-align: justify;
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to my Grocery Store</h1>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dicta quos totam nihil labore saepe quidem amet doloribus quo reprehenderit odio, accusantium explicabo laudantium atque sit molestias eos veritatis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur quibusdam, beatae, aperiam unde quas voluptas dolorem quasi tempora corporis saepe eligendi ullam veritatis totam. Sed ullam, officia nulla in maxime eius necessitatibus id.</p>
+        </div>
+        <div id="vegies" class="item">
+            <h3>VEGITABLES</h3>
+            <p id="vegiespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dicta quos totam nihil labore saepe quidem amet doloribus quo reprehenderit odio, accusantium explicabo laudantium atque sit molestias eos veritatis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ab? Eos ducimus veritatis molestias accusamus distinctio perspiciatis possimus reiciendis ipsa pariatur explicabo iusto deleniti alias aut, eius odio saepe labore illo laudantium dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae impedit non voluptatem excepturi quia ab illo maiores suscipit sed.
+            </p>
+        </div>
+        <div id="oils" class="item">
+            <h3>OILS</h3>
+            <p id="oilspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dicta quos totam nihil labore saepe quidem amet doloribus quo reprehenderit odio, accusantium explicabo laudantium atque sit molestias eos veritatis ullam.</p>
+        </div>
+        <div id="grains" class="item">
+            <h3>GRAINS</h3>
+            <p id="grainspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dicta quos totam nihil labore saepe quidem amet doloribus quo reprehenderit odio, accusantium explicabo laudantium atque sit molestias eos veritatis ullam.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* vh and vw gives you viewport size means screen size instead of it you can use percentage */
+            width: 100vw;
+            height: 100vh;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* When the font size of container is set the elment when given their font size individually then it multiply by the given size. It give size accordint to their parent size */
+            /* font-size: 3em; */
+
+            /* once the em size is given then it follow the em size and give padding according to it  */
+            /* padding: 3em; */
+        }
+        #second{
+            /* rem used to size according to base size of html given  */
+            /* font-size: 3rem;
+            padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+    
+</body>
+</html> 

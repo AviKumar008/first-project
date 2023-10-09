@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* if p is contained by any li which is contained by div  */
+        /* div li p{
+            color: blue;
+            background-color: bisque;
+            font-weight: bold;
+        } */
+        /* if p is right iside the div then this CSS will be applied */
+         /* div > p{
+            > it symbolise the direct child of div so that these property can be applied 
+            color: blue;
+            background-color: bisque;
+            font-weight: bold; 
+        }  */
+        /* if p is right after div i.e p is the next sibling of div  */
+        div + p{
+            color: white;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is affected</p></li>
+                <li>this is not affected</li>
+                <p>this is not direct child</p>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p>This is another pragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>
